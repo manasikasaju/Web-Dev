@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ID Card Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: lavender;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 350px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #d63384; /* pink */
+    }
+
+    label {
+        font-weight: bold;
+        color: #7a5fa0; /* lavender-dark */
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid lavender;
+        border-radius: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #ff9acd;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ff7bb8;
+    }
+
+    #idCard {
+        display: none;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .id-box {
+        background: pink;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .id-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .value {
+        color: #5a3d7a;
+        font-size: 17px;
+        margin: 5px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" id="formContainer">
+    <h2>User Input Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Age:</label>
+    <input type="number" id="age" required>
+
+    <label>Address:</label>
+    <input type="text" id="address" required>
+
+    <button onclick="showID()">Submit</button>
+</div>
+
+<div class="container" id="idCard">
+    <div class="id-box">
+        <div class="id-title">STUDENT ID CARD</div>
+        <div class="value" id="showName"></div>
+        <div class="value" id="showAge"></div>
+        <div class="value" id="showAddress"></div>
+    </div>
+</div>
+
+<script>
+function showID() {
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+    let address = document.getElementById("address").value;
+
+    if (name === "" || age === "" || address === "") {
+        alert("Please fill all fields.");
+        return;
+    }
+
+    document.getElementById("showName").innerText = "Name: " + name;
+    document.getElementById("showAge").innerText = "Age: " + age;
+    document.getElementById("showAddress").innerText = "Address: " + address;
+
+    document.getElementById("formContainer").style.display = "none";
+    document.getElementById("idCard").style.display = "block";
+}
+</script>
+
+</body>
+</html>

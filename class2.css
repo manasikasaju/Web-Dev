@@ -1,0 +1,34 @@
+.social-lists {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+
+}
+.social-link:hover {
+    opacity:0.8;
+
+}
+.social-link:hover svg{
+    fill:beige;
+}
+.bgmage {
+    height: 1000px;
+    width: 500px;
+background-image:url('./images/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE2Ni1wLWwxZGJ1cTN2LnBuZw.webp');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top center; 
+} 
+.bgmage2 {
+    background-attachment:fixed;
+}
+    body{ 
+        height: 10000px;
+    width: 5000px; }
+    
+.spacer{
+    background-color:pink;
+    height:500px;
+    width:100%; 
+}
