@@ -1,0 +1,100 @@
+:root {
+  --pink: #ffcce6;
+  --dark: #333;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #ffb6d5; /* deeper baby pink */
+  color: var(--dark);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: var(--white);
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  font-weight: bold;
+}
+
+.cats {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cat-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.booking {
+  padding: 40px 20px;
+  background: var(--white);
+  margin: 40px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #999;
+  font-style: italic;
+}
+
+.btn {
+  padding: 12px;
+  background: var(--pink);
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.success {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}

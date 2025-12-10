@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let animals =['cat','dog','elephant','tiger'];
+        animals[2]='camel';
+console.log(animals)
+animals.pop();
+animals.push('lion');
+animals.push('deer');
+animals.shift();
+animals.unshift('buffalo');
+animals.splice(2,0, 'zebra');
+animals.splice(3,1);
+
+
+document.body.innerHTML=animals;
+    </script>
+</body>
+</html>
+

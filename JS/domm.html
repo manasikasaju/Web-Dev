@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">THIS IS TITLE</h1>
+    <div class="para">
+        <style>
+            .text-red{
+                color: red;
+            }
+            .text-blue{
+                color: blue;
+            }
+            .text-green{
+                color: green;
+            }
+        </style>
+        <button id='btnred'> Red</button>
+        <button id='btnblue'> Blue</button>
+        <button id='btngreen'> Green</button>
+        <script>
+            const title = document.getElementById('title');
+            const btnred = document.getElementById('btnred');
+            const btnblue = document.getElementById('btnblue');
+            const btngreen = document.getElementById('btngreen');       
+            btnred.addEventListener('click', () => {     title.classList.add('text-red');});
+            btnblue.addEventListener('click', () => {  title.classList.add('text-blue');});
+            btngreen.addEventListener('click', () => {  title.classList.add('text-green');});
+       
+        
+        
+        </script>
+
+    </div>
+</body>
+</html>
